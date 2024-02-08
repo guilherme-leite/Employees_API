@@ -1,9 +1,11 @@
 ﻿using Employees_API.Enums;
+using System.ComponentModel.DataAnnotations;
 
 namespace Employees_API.Models
 {
     public class Employee
     {
+        [Key]
         public int id { get; set; }
         public string Name { get; set; }
         public string LastName { get; set; }
